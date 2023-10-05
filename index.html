@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4 : OOP</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+      }
+      body {
+        width: 60vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .input-form {
+        width: 100%;
+        font-size: 12px;
+      }
+      form {
+        width: 300px;
+        /* border: 1px solid pink; */
+        padding: 0px 10px;
+        margin-bottom: 1px;
+      }
+      form > div {
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 2px 5px;
+      }
+
+      .radius_min {
+        width: 45%;
+        margin: 0;
+      }
+
+      .to {
+        display: inline-block;
+        width: 6%;
+        margin: 0;
+      }
+
+      .radius_max {
+        width: 43%;
+      }
+
+      .btn-wrapper {
+        text-align: center;
+      }
+
+      button {
+        text-align: center;
+        border: none;
+        background-color: rgb(94, 94, 252);
+        color: white;
+        outline: none;
+        padding: 3px 5px;
+        border-radius: 6px;
+      }
+      button:hover {
+        background-color: rgb(11, 11, 228);
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- <div class="input-form"> -->
+    <form>
+      <div>
+        <label for="size">Particles</label>
+        <input type="text" class="particle_size" />
+      </div>
+      <div>
+        <label for="radius">Radius</label>
+        <br />
+        <input type="text" class="radius_min" />
+        <label class="to">To</label>
+        <input type="text" class="radius_max" />
+      </div>
+      <div class="btn-wrapper">
+        <button>Generate</button>
+      </div>
+    </form>
+    <!-- </div> -->
+    <div>
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>
