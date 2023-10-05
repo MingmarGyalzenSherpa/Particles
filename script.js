@@ -6,8 +6,8 @@ const particleRadiusMax = document.querySelector(".radius_max");
 
 const ctx = canvas.getContext("2d");
 
-const CANVAS_WIDTH = (canvas.width = 300);
-const CANVAS_HEIGHT = (canvas.height = 300);
+const CANVAS_WIDTH = (canvas.width = 500);
+const CANVAS_HEIGHT = (canvas.height = 500);
 let particles = [];
 let PARTICLE_SIZE = 20;
 let RADIUS_MIN = 2;
